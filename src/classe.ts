@@ -5,6 +5,10 @@ class Person {
     //     this.name = name;
     //     this.age = age;
     // }
+    static isLive = function () {
+        console.log('Estamos vivos');
+    };
+
     constructor(public name: string, public age: number) {}
     teeth = 32;
     greetings() {
@@ -12,11 +16,8 @@ class Person {
     }
 }
 
-// Person.isLive = function () {
-//     console.log('Estamos vivos', this);
-// };
-
-const p1 = new Person('Pepe', 23);
+let p1: Person;
+p1 = new Person('Pepe', 23);
 const p2 = new Person('Rose', 35);
 
 p1.greetings();
